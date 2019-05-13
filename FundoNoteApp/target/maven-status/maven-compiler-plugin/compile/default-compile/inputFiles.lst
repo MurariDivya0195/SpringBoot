@@ -1,0 +1,8 @@
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/repository/UserRepository.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/controller/LoginController.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/controller/RegistrationController.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/FundoNoteAppApplication.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/service/UserService.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/service/UserServiceImpl.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/model/SendMail.java
+/home/admin1/Desktop/FundoNoteApp/src/main/java/com/bridgelabz/fundoNoteApp/user/model/User.java

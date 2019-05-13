@@ -9,15 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.fundoNoteApp.user.model.User;
 import com.bridgelabz.fundoNoteApp.user.service.UserService;
+
 @RestController
-@ComponentScan("com.bl.app.service")
+@ComponentScan("com.bridgelabz.fundoNoteApp")
 public class RegistrationController {
 	@Autowired
-	UserService userService;
+	private UserService userService;
 
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public User createStudent(@RequestBody User user) {
-
+		System.out.println("In reg Controller");
 		return userService.userReg(user);
 	}
 

@@ -1,0 +1,8 @@
+com/bridgelabz/fundoNoteApp/user/model/SendMail.class
+com/bridgelabz/fundoNoteApp/user/service/UserServiceImpl.class
+com/bridgelabz/fundoNoteApp/user/controller/RegistrationController.class
+com/bridgelabz/fundoNoteApp/user/repository/UserRepository.class
+com/bridgelabz/fundoNoteApp/FundoNoteAppApplication.class
+com/bridgelabz/fundoNoteApp/user/model/User.class
+com/bridgelabz/fundoNoteApp/user/service/UserService.class
+com/bridgelabz/fundoNoteApp/user/controller/LoginController.class

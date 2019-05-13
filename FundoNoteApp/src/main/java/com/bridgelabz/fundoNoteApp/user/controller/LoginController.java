@@ -2,6 +2,7 @@ package com.bridgelabz.fundoNoteApp.user.controller;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -47,4 +48,28 @@ public class LoginController {
 		sender.send(message);
 		return "Mail Sent Success!";
 	}
+
+	@RequestMapping(value = "/updateuser", method = RequestMethod.PUT)
+	public String updateuser(@RequestBody User user, HttpServletRequest request) {
+
+		// String token=userService.login(user);
+		// String token = request.getHeader("token");
+
+		System.out.println("I am  token at update method :" + request.getHeader("token"));
+		userService.update(request.getHeader("token"), user);
+		return "User Updated successfully....";
+
+	}
+
+	@RequestMapping(value = "/deleteuser", method = RequestMethod.DELETE)
+	public String deleteuser(HttpServletRequest request) {
+
+		System.out.println("I am  token at delete method :" + request.getHeader("token"));
+		boolean b = userService.delete(request.getHeader("token"));
+		System.out.println("-->" + b);
+
+		return "User Deleted successfully....";
+
+	}
+
 }

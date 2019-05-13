@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class User {
 	@Id
 //	@Column(name = "id")
-	private long id;
+	private int id;
 
 //	@Column(name = "name")
 	private String name;
@@ -21,7 +21,7 @@ public class User {
 	private String password;
 
 //	@Column(name = "phonenumber")
-	private String phonenumber;
+	private int phonenumber;
 
 //	@Column(name = "activestatus")
 	private String status;
@@ -39,11 +39,11 @@ public class User {
 				+ phonenumber + ", status=" + status + ", image=" + image + "]";
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -71,11 +71,11 @@ public class User {
 		this.password = password;
 	}
 
-	public String getPhonenumber() {
+	public int getPhonenumber() {
 		return phonenumber;
 	}
 
-	public void setPhonenumber(String phonenumber) {
+	public void setPhonenumber(int phonenumber) {
 		this.phonenumber = phonenumber;
 	}
 
